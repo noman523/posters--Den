@@ -8,9 +8,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
+ 
   color: #444444;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -112,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(40, 40, 40, 0.9);
+  background: rgb(255, 255, 255);
 }
 
 #header .logo {
@@ -136,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     border: 0;
     padding: 15px 0;
+    background-color: white;
   }
 }
 
@@ -167,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   padding: 25px 3px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  
 }
 
 .nav-menu > ul > li > a:before {
@@ -312,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #009961;
 }
 
 .mobile-nav {
@@ -416,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   /* background-color: #080808ce; */
-  background: linear-gradient(#ffffff, #080808ce);
+  background: linear-gradient(#ffffff00, #080808c0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -999,7 +1004,7 @@ section {
   font-size: 42px;
   color: #009961;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+ 
   margin-bottom: 20px;
 }
 
@@ -1584,4 +1589,44 @@ section {
     justify-content: center;
     text-decoration: none;
     position: relative;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card_image{
+  border-radius: 4px;
+}
+
+
+.pointer{
+  cursor: pointer!important;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .cart-holder{
+      min-width: 2rem;
+      height: 2rem;
+  }
+
+  .fa-shopping-cart{
+    font-size: .95em!important;
+  }
+  .column {
+    width: 50%;
+    padding: 0 6px;
+    margin-bottom: 20px;
+  }
+}
+
+.w-30{
+  width: 30%;
 }
