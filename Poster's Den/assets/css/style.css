@@ -10,24 +10,24 @@
 --------------------------------------------------------------*/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 body {
  
   color: #444444;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 a {
-  color: #009961;
+  color: #d6d6d6;
 }
 
 a:hover {
-  color: #00cc81;
+  color: #f8f8f8;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
+ 
 }
 
 /*--------------------------------------------------------------
@@ -278,8 +278,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
-  background: #009961;
-  color: #fff;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   border-radius: 50px;
   padding: 8px 25px 9px 25px;
   white-space: nowrap;
@@ -288,10 +288,10 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-.get-started-btn:hover {
-  background: #00b371;
-  color: #fff;
-}
+/* .get-started-btn:hover {
+  background: #fdfdfd;
+  color: #000000;
+} */
 
 @media (max-width: 992px) {
   .get-started-btn {
@@ -421,7 +421,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero:before {
   content: "";
   /* background-color: #080808ce; */
-  background: linear-gradient(#ffffff00, #080808c0);
+  background: linear-gradient(#ffffff00, #0808089f);
+
+  /* background: transparent linear-gradient(180deg, #FFFFFF00 0%, #8F8F8F02 60%, #000000 100%) 0% 0% no-repeat padding-box;
+  opacity: 0.62; */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -441,6 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: 0 0 10px rgb(0 0 0 / 50%);
 }
 
 #hero h2 {
@@ -448,7 +452,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   font-size: 24px;
 }
-
+/* 
 #hero .play-btn {
   width: 94px;
   height: 94px;
@@ -519,11 +523,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-}
+} */
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 }
 
@@ -565,7 +569,8 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -574,7 +579,8 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 14px;
+  /* padding-bottom: 30px; */
 }
 
 .section-title h2 {
@@ -583,6 +589,11 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #464646;
+}
+
+.section-title h5 {
+  color: #464646;
 }
 
 /* .section-title h2::after {
@@ -638,7 +649,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -735,7 +746,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -868,7 +879,7 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   color: #fff;
 }
@@ -1057,7 +1068,7 @@ section {
   color: #009961;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1491,7 +1502,7 @@ section {
   color: #fff;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 
 #footer h3 {
@@ -1499,14 +1510,14 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
 
 #footer p {
   font-size: 15;
-  font-style: italic;
+  /* font-style: italic; */
   padding: 0;
   margin: 0 0 40px 0;
 }
@@ -1608,7 +1619,9 @@ section {
 }
 
 
-
+.cart-holder:hover {
+  color: #009961;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -1630,3 +1643,169 @@ section {
 .w-30{
   width: 30%;
 }
+
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
+
+
+        .shfooter .collapse {
+          display: inherit;
+        }
+        @media (max-width: 767px) {
+          .shfooter ul {
+            margin-bottom: 0;
+          }
+         
+          .shfooter .collapse {
+            display: none;
+          }
+         
+          .shfooter .collapse.show {
+            display: block;
+          }
+         
+          .shfooter .title .fa-angle-up,
+          .shfooter .title[aria-expanded="true"] .fa-angle-down {
+            display: none;
+          }
+         
+          .shfooter .title[aria-expanded="true"] .fa-angle-up {
+            display: block;
+          }
+         
+          .shfooter .navbar-toggler {
+            display: inline-block;
+            padding: 0;
+          }
+        }
+         
+        .resize {
+          text-align: center;
+        }
+        .resize {
+          margin-top: 3rem;
+          font-size: 1.25rem;
+        }
+        /*RESIZESCREEN ANIMATION*/
+        .fa-angle-double-right {
+          animation: rightanime 1s linear infinite;
+        }
+         
+        .fa-angle-double-left {
+          animation: leftanime 1s linear infinite;
+        }
+        @keyframes rightanime {
+          50% {
+            transform: translateX(10px);
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateX(10px);
+            opacity: 0;
+          }
+        }
+        @keyframes leftanime {
+          50% {
+            transform: translateX(-10px);
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateX(-10px);
+            opacity: 0;
+          }
+        }
+
+        .bg-footer{
+          background-color: #747474!important;
+        }
+
+
+        .footer-list li{
+          line-height: 2em;
+        }
+
+        .lsp-1{
+          letter-spacing: .1em;
+        }
+
+
+
+        @media (max-width: 991px) {
+          .site__section.features .footer-site-feature-tp {
+              margin-bottom: 20px;
+              margin-bottom: 2rem;
+          }
+        }
+        @media (max-width: 767px) {
+          .site__section.features .footer-site-feature {
+              margin-bottom: 10px;
+              margin-bottom: 1rem;
+          }
+        }
+
+        .site__section.features .site-feature-icon {
+          padding-right: 10px;
+          padding-right: 1rem;
+        }
+        .site__section.features .site-feature-icon i {
+          color: #318DC5;
+          font-size: 20px;
+          font-size: 1.2rem;
+        }
+
+        .site__section.features .site-feature-content .header {
+          color: #292b2c;
+          margin-bottom: 0;
+          
+          font-size: .8rem;
+          font-weight: 600;
+        }
+        @media (max-width: 1199px) {
+          .site__section.features .site-feature-content .header {
+              font-size: 10px;
+              font-size: .7rem;
+          }
+        }
+        @media (max-width: 991px) {
+          .site__section.features .site-feature-content .header {
+              font-size: 10px;
+              font-size: 1.2rem;
+          }
+        }
+        .site__section.features .site-feature-content p,
+        .site__section.features .site-feature-content span {
+          font-size: 13px;
+          font-size: .7rem;
+          line-height: 1.3;
+          opacity: 0.75;
+        }
+        @media (max-width: 1199px) {
+          .site__section.features .site-feature-content p,
+          .site__section.features .site-feature-content span {
+              font-size: 12px;
+              font-size: .9rem;
+          }
+        }
+        @media (max-width: 767px) {
+          .site__section.features .site-feature-content {
+              text-align: center;
+          }
+        }
+
+
+        .star-review{
+          color: #318DC5;
+        }
+
+
+ 
